@@ -1,0 +1,20 @@
+//# allFunctionsCalledOnLoad
+loaded_h_0(function(_){var window=this;
+_.z6g=_.x("waWYSb",[]);
+_.v("waWYSb");
+_.A6g=class extends _.so{static Ra(){return{}}constructor(){super();this.Aa=_.Vpa();this.oa=new Set;this.Qi=this.ka=null}};_.ag(_.z6g,_.A6g);
+_.w();
+_.v("t7xgIe");
+
+_.w();
+_.B6g=_.x("R5dwh",[_.Whb,_.Uhb,_.Vhb,_.z6g]);
+_.v("R5dwh");
+var C6g=async function(a){var b=(0,_.Sf)(),c=b();b=b(1);try{try{return b(await c(_.Of(a.Aa,()=>_.Qf(_.Vf(_.Nq)))))}catch{return b(),null}}finally{c()}},D6g=function(a){a.Qi||(a.Qi=C6g(a));return a.Qi},E6g=async function(a,b){var c=(0,_.Sf)(),d=c();c=c(1);try{if(b){var e=c(await d(b.id));if(e!==null){var f=c(await d(D6g(a)));c(await d(f?.pop(e)))}}}finally{d()}},F6g=function(a,b){!a.oa.delete(b)||a.oa.size>0||(b=a.ka,a.ka=null,E6g(a,b))},G6g=async function(a,b){var c=(0,_.Sf)(),d=c();c=c(1);try{let e=
+c(await d(D6g(a)));return e?e.pushAsync(void 0,void 0,b):null}finally{d()}},H6g=function(a,b){a.oa.add(b);if(!a.ka){var c={id:G6g(a,()=>{if(a.ka===c){a.ka=null;let d=[...a.oa];a.oa.clear();for(let e of d)e()}})};a.ka=c}},I6g=class extends _.Yr{static Ra(){return{service:{focus:_.y6g,page:_.s6g,Ae:_.t6g,history:_.A6g}}}constructor(a){super(a.La);this.ka=()=>{this.notify("Bvpvue");this.wa()};this.focus=a.service.focus;this.Aa=new _.yo(a.service.page.ka);var b=this.getData("isDesktop").Xb(!1);this.Ae=
+a.service.Ae;this.history=a.service.history;this.addOnDisposeCallback(()=>{F6g(this.history,this.ka)});var c=this.getRoot().el().clientHeight,d=!1,e=0,f=0;document.documentElement.style.scrollbarGutter="stable";if(b){let g=h=>{this.JS()&&(h.key==="Escape"&&this.oa(),h.key!=="Tab"&&h.stopPropagation())};document.addEventListener("keydown",g,!0);this.addOnDisposeCallback(()=>{document.removeEventListener("keydown",g,!0)})}else this.getRoot().el().addEventListener("touchstart",g=>{g instanceof TouchEvent&&
+(e=g.touches[0].clientY,d=e<=c)}),this.getRoot().el().addEventListener("touchmove",g=>{d&&g instanceof TouchEvent&&(f=g.touches[0].clientY,f-e>c/4&&this.oa())}),this.getRoot().el().addEventListener("touchend",()=>{d=!1}),this.getRoot().el().addEventListener("scroll",()=>{this.zy()})}Bd(){this.focus.ka||_.u6g(this.focus);this.getRoot().addClass("kEr8S");this.Aa.addClass("o2jCqf");_.v6g(this.focus,this.getRoot());H6g(this.history,this.ka)}oa(){this.Ae.logClick(this.Ga("GGAcbc").el());this.notify("Bvpvue");
+this.wa()}Ba(){this.notify("F8oiKc")}wa(a,b=!1){this.trigger("dilFCd");F6g(this.history,this.ka);return new Promise(c=>{this.getRoot().removeClass("kEr8S");this.Aa.removeClass("o2jCqf");b&&_.x6g(this.focus);_.oib.setTimeout(()=>{this.getRoot().remove();c()},500)})}zy(){var a=this.getRoot().el().scrollTop>this.Ga("GGAcbc").el().clientHeight;this.getRoot().toggleClass("BPJAhd",a)}JS(){return this.getRoot().hasClass("kEr8S")}};I6g.prototype.$wa$fuZzMe=function(){return this.wa};
+I6g.prototype.$wa$V3upec=function(){return this.Ba};I6g.prototype.$wa$Zpug7c=function(){return this.oa};I6g.prototype.$wa$npT2md=function(){return this.Bd};_.$r(_.B6g,I6g);
+_.w();
+});
+// Google Inc.
